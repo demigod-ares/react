@@ -7,7 +7,7 @@ export const gammaMap = wineData.reduce((map, wine) => {
   const ash: number = convertToNumber(wine["Ash"]);
   const hue: number = convertToNumber(wine["Hue"]);
   const magnesium: number = convertToNumber(wine["Magnesium"]);
-  const gamma: number = (ash * hue) / magnesium
+  const gamma: number = (ash * hue) / magnesium;
   //Gamma = (Ash * Hue) / Magnesium.
   if (!map.has(alcohol)) {
     map.set(alcohol, []);
